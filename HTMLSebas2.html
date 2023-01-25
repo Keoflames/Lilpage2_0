@@ -1,0 +1,388 @@
+<HTML>
+<style>
+#menu{
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 0 0;
+    list-style: none;  
+    background: #111;
+    background: -moz-linear-gradient(#444, #111); 
+        background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));    
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);
+    background: -ms-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -moz-box-shadow: 0 2px 1px #9c9c9c;
+    -webkit-box-shadow: 0 2px 1px #9c9c9c;
+    box-shadow: 0 2px 1px #9c9c9c;
+}
+
+#menu li{
+    float: left;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+#menu a{
+    float: left;
+    height: 25px;
+    padding: 0 25px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 12px/25px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+    color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+    color: #fafafa;
+}
+
+#menu li:hover > ul{
+    display: block;
+}
+
+/* Sub-menu */
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);    
+    background: -ms-linear-gradient(#444, #111);    
+    background: linear-gradient(#444, #111);    
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{   
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+}
+
+#menu ul a{    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #menu ul a{ /* IE6 */   
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #menu ul a{ /* IE7 */    
+    height: 10px;
+    width: 150px;
+}
+
+#menu ul a:hover{
+        background: #0186ba;
+    background: -moz-linear-gradient(#04acec,  #0186ba);    
+    background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+    background: -webkit-linear-gradient(#04acec,  #0186ba);
+    background: -o-linear-gradient(#04acec,  #0186ba);
+    background: -ms-linear-gradient(#04acec,  #0186ba);
+    background: linear-gradient(#04acec,  #0186ba);
+}
+
+#menu ul li:first-child a{
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #04acec; 
+}
+
+#menu ul li:last-child a{
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #04acec; 
+}
+</style>
+  <HEAD>
+  
+   <TITLE> Sebastian Fernandez
+   </TITLE>
+  </HEAD>
+  <BODY link="#4502F7" Vlink="#4502F7" BGCOLOR="#000000"; Background="Ri.jfif" style="background-repeat: no-repeat; background-position: center center;">
+<ul id="menu">
+    <li><a href="index.html">Biografia</a></li>
+    <li>
+        <a href="#">Categories</a>
+        <ul>
+           <li><a href="keokush.html">KEO KUSH</a></li>
+            <li><a href="#">KEO COUTURE</a></li>
+            <li><a href="#">KEO TWITCH</a></li>
+        </ul>
+    </li>
+    <li><a href="HTMLSebas2.html"">Musicas</a></li>
+    <li><a href="3HtmlSebas.html">Videos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+</ul>
+<center> <PRE><U><font color="#FFFFFF" Size=5 face="Comic Sans Ms"></U>Los mejores Temas del momento Y un poco de sus letras !!!!!! </center></font>
+<HR Size=10 wicht=50% color=#000000><Pre><font color="#FFFFFF" Size=3 face="Comic Sans Ms"><img src ="R.jfif" height=500 width=650 border=3 bordercolor=FF9F3A align=right><table bordercolor=FF9F3A width=55% align=middle border=3>
+<tr><th colspan=3 bgcolor="#FF9F3A"><font color="#000000" Size=3 face="Comic Sans Ms">Canciones del Keo mas Top</th></tr>
+<tr align=center>
+<td width=40% bgcolor="#FF9F3A">
+Nombre de la cancion/</font><font color="#4502F7" Size=3 face="Comic Sans Ms"><A href="https://www.youtube.com/channel/UCBCD1nIuiH-d10_l6Q-8rRg">CLICK Y A YOUTUBE</font>
+</td><font color="#000000" Size=3 face="Comic Sans Ms">
+<td width=30% bgcolor="#FF9F3A">
+Compositores
+</td>
+</tr>
+<tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=6x21Zdfae54">1- Rip the Woo</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Enrique Ruano De La Cruz / Marco David Diaz Flores / Padua Keoma Salas Sanchez
+</td>
+</tr>
+<tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=ByDOVlNNUqU">2- Bando Boyz Free</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Marco David Diaz Flores / Ruben Lopez / Padua Keoma Salas Sanchez
+</td>
+</tr>
+<tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=VZEzB06SP28">3- Loco</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Luca Antonio Barker /Dylan Thomas Cerulli / Nicolò Rapisarda / Padua Keoma Salas Sanchez /Umberto Violo
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=wOuM8girLuY">4- MONEY TILL I DIE</U><A/>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Jairo Cardo Aladrén / Marco David Diaz Flores / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=wOuM8girLuY">5- 24H</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Jairo Cardo Aladrén / Marco David Diaz Flores / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=oveCGi1E-aA">6- Plugstar</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Marco David Diaz Flores / Alex Ruiz / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=flMNxME0Bz0">7- Moon Talk</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Enrique Ruano De La Cruz / Marco David Diaz Flores / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=wOQYSf8I01w">8- On the Road feat. Multiplica / Yung Sarria</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Felipe Laurindo De Carvalho / Kidd Keo / Emy Luziano / Juan Jose Bosoka Pinto / Yung Sarria
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=Yzj-dHlz9XM">9- Bando Boyz Free 3</U>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Marco David Diaz Flores / Ruben Rodriguez Lopez / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=lwCTOBKjMRM">10- Soy Así</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Jairo Cardo Aladrén / Marco David Diaz Flores / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=2jIcuo_0U0M">11- Mujeres y Petas feat. ElPatron970 / Multiplica</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Carlos a. Caicedo / Juan Jose Bosoka Pinto / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=TFDcODhlpqg">12- Drifting & Burning feat. Aya</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Jairo Cardo Aladrén / Marco David Diaz Flores / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=EOIUFS30JZg">13- Hola Bebé</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Jeremys Alberto Luciano Capelan / Marco David Diaz Flores / Rodrigo Rodriguez Martinez / Jonatan Rene Mejia / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=EhpvI0r--9Q">14- Yo Con Mi Man</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Padua Keoma Salas Sanchez / Young Sarria
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=JDj2KZqiFnE">15- TikTakLove</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Osmar Ismael Montes / Padua Keoma Salas Sanchez / Marcos David Diaz Flores
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=dodarqWUX2Q">16- Niño Roto</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Padua Keoma Salas Sanchez / Yay Beats
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=lKyLqFKPsAk">17- Corrido Espacial</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Lil Bit feat. Kiing Shooter
+William Antonio Daniels / Frankie P. / Padua Keoma Salas Sanchez / Keanu Torres
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=heGAUhNY9bg">18- Bando Boyz Free 2</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Marco David Diaz Flores / Ruben Rodriguez Lopez / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=iK3W9kvsQ_o">19- Olvídate</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Marco David Diaz Flores / Kevin Gbaguidi / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=BqiYjgxUQLg">20- War</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Jairo Cardo Aladrén / Marco David Diaz Flores / Padua Keoma Salas Sanchez
+</td>
+</tr><tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=TJBY7pRZGaw">21- Vamonos feat. Sick Luke</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Luca Antonio Barker / Marco David Diaz Flores / Padua Keoma Salas Sanchez
+</td>
+</tr>
+<td>
+<LI><U><A href="https://www.youtube.com/watch?v=MuxjGplYGT0">22- Tamo Aqui</U></A>
+</td>
+<td><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+Marco David Diaz Flores / Padua Keoma Salas Sanchez / Anderson Joel Oliveros Silva
+</td>
+</tr><tr>
+</table><font color="#FFFFFF" Size=3 face="Comic Sans Ms">
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</font></pre>
+<p>
+<p>
+<p>
+<Center><pre><font color="#FFFFFF" Size=1,2 face="Comic Sans Ms">© 2021 Warner Music Group & Dbtrap Records
+</font></pre>
+</HTML>

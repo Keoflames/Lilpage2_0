@@ -1,0 +1,300 @@
+<HTML>
+<style>
+#menu{
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 0 0;
+    list-style: none;  
+    background: #111;
+    background: -moz-linear-gradient(#444, #111); 
+        background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));    
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);
+    background: -ms-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -moz-box-shadow: 0 2px 1px #9c9c9c;
+    -webkit-box-shadow: 0 2px 1px #9c9c9c;
+    box-shadow: 0 2px 1px #9c9c9c;
+}
+
+#menu li{
+    float: left;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+#menu a{
+    float: left;
+    height: 25px;
+    padding: 0 25px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 12px/25px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+    color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+    color: #fafafa;
+}
+
+#menu li:hover > ul{
+    display: block;
+}
+
+/* Sub-menu */
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);    
+    background: -ms-linear-gradient(#444, #111);    
+    background: linear-gradient(#444, #111);    
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{   
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+}
+
+#menu ul a{    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #menu ul a{ /* IE6 */   
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #menu ul a{ /* IE7 */    
+    height: 10px;
+    width: 150px;
+}
+
+#menu ul a:hover{
+        background: #0186ba;
+    background: -moz-linear-gradient(#04acec,  #0186ba);    
+    background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+    background: -webkit-linear-gradient(#04acec,  #0186ba);
+    background: -o-linear-gradient(#04acec,  #0186ba);
+    background: -ms-linear-gradient(#04acec,  #0186ba);
+    background: linear-gradient(#04acec,  #0186ba);
+}
+
+#menu ul li:first-child a{
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #04acec; 
+}
+
+#menu ul li:last-child a{
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #04acec; 
+}
+</style>
+<HEAD>
+
+<TITLE>
+EL BOSS
+</TITLE>
+</HEAD>
+<BODY link="#ffffff" Vlink="#ffffff" BGCOLOR="#ffffff"; Background="descarga.png" style="background-repeat: no-repeat; background-position: center center;" >
+
+<ul id="menu">
+    <li><a href="index.html">Biografia</a></li>
+    <li>
+        <a href="#">Categories</a>
+        <ul>
+           <li><a href="keokush.html">KEO KUSH</a></li>
+            <li><a href="#">KEO COUTURE</a></li>
+            <li><a href="#">KEO TWITCH</a></li>
+        </ul>
+    </li>
+    <li><a href="HTMLSebas2.html"">Musicas</a></li>
+    <li><a href="3Htmlsebas.html">Videos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+</ul>
+</Body>
+ <pre><font color="#000000" Size=5 face="Comic Sans Ms"><center>
+ Lo mejores Videos Del Keo!!!
+ INFO Y CURIOSIDADES DE LAS MUSIC 
+ </center></pre>
+ <HR Size=4 wicht=60% color=#FF9F3A>
+<p>
+<p>
+<p>
+<center><pre><font color="#FF9F3A" Size=5 face="Comic Sans Ms">
+Bando Boyz Free</Font>
+<video src="y2mate.com - Kidd Keo   Bando Boyz Free Official Video_720p.mp4" width="1000" height="680" controls></video></Center>
+<center><pre><font color="#FF9F3A" Size=4 face="Comic Sans Ms">Artista: Kidd Keo
+Álbum: BACK TO ROCKPORT
+Fecha de lanzamiento: 2020
+Género: Urbano latino</center>
+<pre><font color="#000000" Size=4 face="Comic Sans Ms"><center>Después de lanzar dos materiales inéditos en pocos días, con protagonismo para ‘Loco’, junto a Dark Polo Gang,
+y ‘Cómo vas?’,Kidd Keo se ha mantenido en silencio durante dos meses. Volviendo a la carga tras unas semanas en 
+los que sus publicaciones 
+en redes sociales han dado más de qué hablar que su música, estrena videoclip bajo el título ‘Bando Boyz Free‘.
+
+La producción musical corre a cargo de Retro Money, mientras que la grabación es obra de Kevin Yern.</center></pre></font>
+</font>
+<P>
+<p>
+<font color="#FF9F3A" Size=4 face="Comic Sans Ms"><center>FALSOHUMILDE Rat video </center></Font>
+<center><video src="y2mate.com - Kidd Keo  FALSOHUMILDE RAT Video_v720P.mp4" width="1000" height="680" controls></video></Center>
+<center><pre><font color="#FF9F3A" Size=4 face="Comic Sans Ms">
+Artista: Kidd Keo
+Álbum: Falso Humilde
+Fecha de lanzamiento: 2022
+Género: Urbano latino</center>
+<pre></font><font color="#000000" Size=4 face="Comic Sans Ms"><center>Kidd Keo contraataca a Rels B con 'Falso Humilde': "Te has metido donde no debías"
+El alicantino resuelve con la cuarta tiraera consecutiva un conflicto que va camino de convertirse en un clásico
+del rap español. Tal y como están las cosas en la música urbana, ya no hace falta esperar a una batalla de gallos
+oficial para que los artistas de freestyle saquen la artillería frente a ofensas de colegas de profesión. 
+Lo de Kidd Keo y Rels B es el mejor ejemplo en la actualidad, 
+en un beef que va camino de eclipsar otros grandes enfrentamientos.
+<p>
+Su pique es como si Góngora y Quevedo hubieran nacido en 1995, llevaran tatuajes y condujeran Ferraris, 
+algo que -salvando las distancias literarias- los raperos están rememorando en su particular Siglo de
+Oro de los insultos cantados.
+<p>
+El turno de réplica estaba en el tejado de Kidd Keo, quien ha pillado el rebote (literal) de su rival y se ha marcado
+un clarísimo'Falso Humilde'. Se trata de una canción que sigue al "tú eres un palomo, el tontico del juego" que su 
+rival sacó hace poco más de 24 horas. Por supuesto, es tendencia en YouTube.
+Es difícil destacar una provocación sobre otra en un vídeo sacado a toda prisa y que aun así ya tiene provocaciones 
+(desde la rata que ilustra el clip),</center>
+<ol>pero seleccionamos a continuación algunos de los versos más floridos:
+<li>La industria no te quiere porque no eres yo
+<li>Te dejo que me tires porque es promoción
+<li>No te puedo ir de calle porque no tienes calle
+<li>Yo alimento y firmo artistas e invierto en talento, no en Ferraris y en vacilar
+<li>Que si me matan en el Fortnite, y hablo de shooters (No) / ¿Cómo quieres que te tire de shooters, bro? Are you dumb, bro?
+</ol>
+<center>
+Ignorando lo de que el keo usa mucho el inglés tira alto beef y referencias, que continúan un beef que al parecer comenzó 
+bien serio allá por 2018. Fue cuando Rels B publicó 'Euromillón', celebrando convertirse en el primer rapero nacional en 
+sumar un millón de followers en YouTube, y riéndose del 'One Million' de Keo donde este aseguraba que sería "el primero en hacer un millón".
+<p>
+Con mucha razón (porque en la letra dice 'money' tras esa frase), el alicantino "KEO" respondió que se refería a un millón de euros, 
+porque en este sector la popularidad y valía muchas veces se mide con pasta gansa. Es lo de menos, porque dudamos que Rels vaya a morderse 
+la lengua y seguro que tiene una bala en la recámara.</center></pre></font>
+<P>
+<p>
+<font color="#FF9F3A" Size=5 face="Comic Sans Ms"><center>MAMA-OFFICIAL VIDEO</center></Font>
+<center><video src="y2mate.com - Kidd Keo  MAMA Official Video_1080p.mp4" width="1000" height="680" controls></video></Center>
+<pre><font color="#FF9F3A" Size=4 face="Comic Sans Ms">
+<center>Artista: Kidd Keo
+Álbum:MAMA
+Fecha de lanzamiento: 2022
+Género: Urbano latino</center></font><font color="#000000" Size=4 face="Comic Sans Ms"><center>Kidd Keo es uno de esos artistas que no pueden parar de crear, ya sea ropa, una serie animada o, por supuesto,
+música. El alicantino está de vuelta ahora para presentarnos ‘Mama‘ , un nuevo lanzamiento donde el artista regresa 
+a sus orígenes, tanto a nivel musical como lírico.
+
+Y es que sin duda este tema nos recuerda a ese Keo de hace unos años. Esto no es ni positivo ni negativo: de hecho se 
+lo puede permitir después de haber coqueteado y experimentado con diferentes sonidos y enfoques musicales. Por esa misma razón, 
+‘Mama’ suena nostálgica, pura y consigue tocarnos alguna que otra fibra sensible.
+
+En cuanto a la producción, el tema corre a cargo de Nate Johnson, quien se ha encargado de confeccionar un beat donde un adictivo 
+riff de guitarra se roba todo el show. En la cámara nos encontramos a Kevin Yern, un colaborador habitual de Keo que, sin duda, 
+los más veteranos seguidores del de Alicante reconocerán.
+
+En resumidas cuentas, si eres fan de Keo estás de enhorabuena con este nuevo track, y es perfecto para que se lo dediques a tu ma, 
+como ya habrás asumido por el título. Por lo demás, solo nos espera tener paciencia para conocer el próximo movimiento de un artista 
+en constante transformación.</center></pre></fONT>
+<P>
+<p>
+<font color="#FF9F3A" Size=5 face="Comic Sans Ms"><center>kIDD KEO - Sushi</center></Font>
+<center><video src="y2mate.com - Kidd Keo  SUSHI Cry Video_v720P.mp4" width="1000" height="680" controls></video></Center>
+<pre><center><font color="#FF9F3A" Size=4 face="Comic Sans Ms">Artista: Kidd Keo
+Álbum: SUSHI
+Fecha de lanzamiento: 2022
+Géneros: Música latina, Urbano latino, Hip-Hop/Rap</center></font><font color="#000000" Size=4 face="Comic Sans Ms"><center>
+En los últimos días se ha lanzado el videoclip del tema Sushi de Kidd Keo. Un tema producido por Aivan Beatz, 7Brazzy y Dzey Beatz 
+que parece ser la respuesta al tema ‘100 Tracks’ de Rels B, en el que se le dedicaron algunas indirectas.
+
+En “Sushi”, Kidd Keo le acusa de lanzarle beef, de no ser leal con los suyos ni valiente. Asimismo, en la portada del tema se puede 
+intuir una referencia al disco ‘Boys Don’t Cry’ (2016) de Rels B. </center></pre></font>
+<p>
+<p>
+</center>
+</Html>

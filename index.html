@@ -1,0 +1,232 @@
+<HTML>
+<style>
+#menu{
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 0 0;
+    list-style: none;  
+    background: #111;
+    background: -moz-linear-gradient(#444, #111); 
+        background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));    
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);
+    background: -ms-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -moz-box-shadow: 0 2px 1px #9c9c9c;
+    -webkit-box-shadow: 0 2px 1px #9c9c9c;
+    box-shadow: 0 2px 1px #9c9c9c;
+}
+
+#menu li{
+    float: left;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+#menu a{
+    float: left;
+    height: 25px;
+    padding: 0 25px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 12px/25px Comic Sans Ms;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+    color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+    color: #fafafa;
+}
+
+#menu li:hover > ul{
+    display: block;
+}
+
+/* Sub-menu */
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);    
+    background: -ms-linear-gradient(#444, #111);    
+    background: linear-gradient(#444, #111);    
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{   
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+}
+
+#menu ul a{    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #menu ul a{ /* IE6 */   
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #menu ul a{ /* IE7 */    
+    height: 10px;
+    width: 150px;
+}
+
+#menu ul a:hover{
+        background: #0186ba;
+    background: -moz-linear-gradient(#04acec,  #0186ba);    
+    background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+    background: -webkit-linear-gradient(#04acec,  #0186ba);
+    background: -o-linear-gradient(#04acec,  #0186ba);
+    background: -ms-linear-gradient(#04acec,  #0186ba);
+    background: linear-gradient(#04acec,  #0186ba);
+}
+
+#menu ul li:first-child a{
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #04acec; 
+}
+
+#menu ul li:last-child a{
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #04acec; 
+}
+</style>
+  <HEAD>
+   <TITLE> Sebastian Fernandez
+   </TITLE>
+   </link>
+  </HEAD>
+  <BODY BGColor="#000000"> <src="beat.mp3" autoplay="true" loop="true" volumen"80" width="0" height="0">
+<ul id="menu">
+    <li><a href="index.html">Biografia</a></li>
+    <li>
+        <a href="#">Categories</a>
+        <ul>
+           <li><a href="keokush.html">KEO KUSH</a></li>
+            <li><a href="#">KEO COUTURE</a></li>
+            <li><a href="#">KEO TWITCH</a></li>
+        </ul>
+    </li>
+    <li><a href="HTMLSebas2.html"">Musicas</a></li>
+    <li><a href="3Htmlsebas.html">Videos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+</ul>
+<Pre><img src="KEOLOGO.png" heigt=200 width=200 vspace=25 align=Left>
+<PRE>
+<P>                                                                                         UN POCO DE SU MUSICA
+<HR Size=8 wicht=60% color=#FFFFFF> <font color="#FFFFFF" Size=5 face="Comic Sans Ms">
+¿Quien es Kidd Keo?
+<img src ="autokeo.jpg" height=500 width=650 border=3 align=right hspace=130></center><font color="#FFFFFF" Size=4 face="Comic Sans Ms">
+<pre>
+<U><font color="#FFFFFF" Size=5 face="Comic Sans Ms">Padua Keoma Salas Sanchez "KIDD KEO"
+</U></font>
+Kidd Keo es un chaval de barrio como otro cualquiera,
+pero que quiere salir de ahí y se busca sus formas sin meterse en líos.
+Gracias a que su madre ha sido siempre muy hippie se crío ocupando casas
+y durmiendo en la calle, lo cual no significa que no se lo pasara de puta madre!
+Es Español, pero el hecho de que parte de su familia este en Canadá y de haber 
+andado con gente de todos lados, han desarrollado en el esos aires tan de fuera.
+Si hay una cosa que diferencia a Kidd Keo es su creatividad, a la corta edad de 13 
+años diseñaba su propia línea de ropa y hacia sus pinitos con los efectos especiales 
+al mismo tiempo que componía sus primeras letras. En este momento Kidd Keo es un 
+artista en alza representando un sonido de Trap único en el panorama Español y 
+haciendo mucho ruido en Sudamérica y en Estados Unidos. En sus temas de los 
+cuales muchos se han hecho “virales” se puede apreciar una influencia clara del 
+TRAP original de Atlanta y su variable Francesa.
+ <p>
+KIDD KEO es uno de los artistas más admirados y respetados del momento, 
+con su Trap Music está consiguiendo importantes reconocimientos, prácticamente 
+desde sus inicios se ha destacado como uno de los artistas del género más importantes.
+En un año lleno de éxitos, conciertos sold out, giras en Latino America, Los Angeles USA,
+esta cerrando un año muy fructífero a nivel artístico y personal, superando sus récords 
+de descargas en todas las plataformas, llevando su Trap Music alrededor de todo el mundo,
+lleno de un gran abanico de propuestas y demanda de brands muy reconocidas de la industria.</Font>
+<p>
+<p>
+<p><center>Bando boyz Free-Beat</Center><center><audio src="bando.mp3"controls autoplay type="audio/mp3"></audio></Center>
+<Center><font color="#FFFFFF" Size=1,2 face="Comic Sans Ms">© 2021 Warner Music Group & Dbtrap Records
+Non-Commercial Instrumental Remake produced by 8IGHT 9INE
+</font>
+</HTML>
